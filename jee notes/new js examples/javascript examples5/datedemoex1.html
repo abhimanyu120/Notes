@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Date Example</title>
+<script>
+function showdate()
+{
+var dt=new Date();
+document.write("<b>Current date is "+dt+"</b><br>");
+var day=dt.getDay();
+document.write("<b>Today's day is "+day+"</b><br>");
+var date=dt.getDate();
+document.write("<b>Today's date is "+date+"</b>");
+}
+</script>
+</head>
+<body>
+<input type="button" value="show date details" 
+	onclick="showdate()" >
+</body>
+</html>
+
+
+
+

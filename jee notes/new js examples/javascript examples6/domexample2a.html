@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var para;
+para=document.getElementById("p1");
+var str=para.innerHTML;
+alert(str);
+var arr=para.childNodes;
+alert(arr.length);
+alert(arr[2].nodeValue);
+}
+</script>
+</head>
+<body>
+<p id="p1">
+This is a sample paragraph.
+<a href="http://www.google.com">Google</a>
+This was an image
+</p>
+<input type="button" value="click me" onclick="show();" >
+</body>
+</html>

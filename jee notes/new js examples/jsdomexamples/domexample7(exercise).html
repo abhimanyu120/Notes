@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addItem( )
+{
+var newele=prompt("Enter the new element text");
+var newnode=document.createElement("li");
+newnode.style.color=newele;
+newnode.innerHTML=newele;
+var exisele=prompt("Enter the element after which you want to add");
+var myul=document.getElementById("colors");
+var all_li=myul.getElementsByTagName("li");
+for(i=0;i<all_li.length;i++)
+{
+	var str=all_li[i].innerHTML;
+	if(str==exisele)
+	{
+		if(all_li[i].nextSibling!=null)
+		{
+		   myul.insertBefore(	newnode,all_li[i].nextSibling);
+		 }
+		else
+		{
+		 myul.appendChild(newnode);
+		}
+		alert("Element added");
+		break; 		
+	}
+      }
+}
+</script>
+<style type="text/css">
+#rd
+{
+color: red;
+}
+#bl
+{
+color: blue;
+}
+</style>
+</head>
+<body>
+<h3>My Favourite Colors</h3>
+<ul id="colors" >
+<li id="rd">RED</li>
+<li id="bl">BLUE</li>
+</ul>
+<input type="button" value="add new item" onclick="addItem();" >
+</body>
+</html>

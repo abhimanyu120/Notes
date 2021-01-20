@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+var names=[ ];
+var i;
+for( i=0;i<10;i++)
+{
+names[i]=prompt("Enter name");
+}
+document.write("Names are:<br>");
+for(i=0;i<10;i++)
+{
+document.write(names[i]+"<br>");
+}
+var str=prompt("Enter name to search:");
+var index=0,pos;
+while(true)
+{
+pos=names.indexOf(str,index);
+if(pos==-1)
+	break;
+
+document.write(str +" is at pos "+pos+"<br>");
+index=pos+1;
+}
+</script>
+</head>
+<body>
+</body>
+</html>

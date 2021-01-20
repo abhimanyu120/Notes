@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addLink( )
+{
+var sitename=prompt("type the website name");
+var anch=document.createElement("a");
+var txt=document.createTextNode("Click me to visit "+sitename);
+anch.appendChild(txt);
+
+anch.setAttribute("href","http://www."+sitename+".com");
+var mydiv=document.getElementById("d1");
+mydiv.appendChild(anch);
+mydiv.appendChild(document.createElement("br"));
+}
+</script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<div id="d1">
+<h4> Click the button to create a link to your fav site</h4>
+</div>
+<input type="button" value="add new link" onclick="addLink();" >
+</body>
+</html>

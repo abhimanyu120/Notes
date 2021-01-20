@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function showMessage( )
+{
+mypara=document.getElementById("p1");
+mypara.innerHTML="Good Morning!";
+}
+function changeStyle( )
+{
+var mypara;
+mypara=document.getElementById("p1");
+mypara.style.fontWeight="bold";
+}
+function changeColor( )
+{
+var mypara;
+mypara=document.getElementById("p1");
+mypara.style.color="red";
+}
+</script>
+</head>
+<body>
+<p id="p1">
+This is a sample paragraph.
+</p>
+<input type="button" value="show messsage" onclick="showMessage();" >
+<input type="button" value="make bold" onclick="changeStyle();" >
+<input type="button" value="color it!" onclick="changeColor();" >
+</body>
+</html>

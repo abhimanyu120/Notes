@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function add()
+{
+var fst=document.frm.firstno;
+var sec=document.frm.secno;
+var thrd=document.frm.thno;
+if(fst.value=="" || sec.value=="")
+	alert("Please input both nos");
+else
+{
+var sum=parseInt(fst.value)+parseInt(sec.value);	
+thrd.value=sum;
+}
+}
+</script>
+</head>
+<body>
+<form name="frm">
+First Number:<input type="text" name="firstno" ><br>
+Second Number:<input type="text" name="secno" ><br>
+Sum is :<input type="text" name="thno" ><br>
+<input type="button" onclick="add()" value="Add Nos">
+</form>
+</body>
+</html>

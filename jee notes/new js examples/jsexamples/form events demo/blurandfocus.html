@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function add()
+{
+var fr=document.myfrm;
+var x=fr.fno.value;
+var y=fr.sno.value;
+var z=parseInt(x)+parseInt(y);
+fr.result.value=z;
+
+}
+function clearinput( )
+{
+document.myfrm.fno.value="";
+document.myfrm.sno.value="";
+document.myfrm.result.value="";
+document.myfrm.fno.focus( );
+}
+</script>
+</head>
+
+
+<body>
+<form name="myfrm">
+Enter first Number:<input type="text" name="fno" ><br>
+Enter sec  Number:<input type="text" name="sno" onblur="add( )"><br>
+Their Sum is:<input type="text" name="result" onblur="clearinput( )"><br>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+

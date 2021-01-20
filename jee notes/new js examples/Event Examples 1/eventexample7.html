@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+function verify(x)
+{
+    let ans=confirm("Are u sure you want to visit facebook?");
+    if(ans===true)
+            x.setAttribute("href","http://www.facebook.com");
+}
+</script>
+</head>
+<body>
+<a id="a1"  href="#" 
+onclick="return(verify(this))">Click Me To Visit Facebook</a>
+</body>
+</html>

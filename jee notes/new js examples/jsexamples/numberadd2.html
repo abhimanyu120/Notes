@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function show()
+{
+var x=document.myfrm.fno.value;
+var y=document.myfrm.sno.value;
+var z=parseInt(x)+parseInt(y);
+document.myfrm.result.value=z;
+}
+function verify(inp)
+{
+if(inp.value=="")
+	{
+	alert("Please input digits");
+	return false;
+	}
+}
+</script>
+</head>
+<body>
+<form name="myfrm">
+Enter first Number:<input type="text" name="fno" onblur="verify(this)"><br>
+Enter sec  Number:<input type="text" name="sno" onblur="verify(this)" ><br>
+Their Sum is:<input type="text" name="result" onfocus="show()" ><br>
+</form>
+</body>
+</html>

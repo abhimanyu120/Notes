@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var s;
+s=document.getElementById("p1");
+alert(s.innerHTML);
+}
+function change( )
+{
+var s;
+s=document.getElementById("p1");
+s.innerHTML="Now text has changed";
+}
+</script>
+</head>
+<body>
+<p id="p1">
+This is a sample paragraph.
+</p>
+<br>
+<input type="button" value="show text" onclick="show();" >
+<input type="button" value="change it" onclick="change();" >
+</body>
+</html>

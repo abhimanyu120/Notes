@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+function changeColor()
+{
+this.style.color="red";
+}
+</script>
+</head>
+<body>
+<div id="mydiv">
+Hello User
+</div>
+<script type="text/javascript">
+var x=document.getElementById("mydiv");
+x.onclick=changeColor;
+</script>
+</body>
+</html>

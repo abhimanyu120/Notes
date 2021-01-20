@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var x;
+x=document.getElementById("p1");
+alert(x.innerHTML);
+x.innerHTML+="<br><span id='sp1'>This is new message</span>";
+document.getElementById("sp1").style.color="red";
+}
+</script>
+</head>
+<body>
+<p id="p1" >This is a sample paragraph.</p>
+<input type="button" value="click me" onclick="show();" >
+</body>
+</html>

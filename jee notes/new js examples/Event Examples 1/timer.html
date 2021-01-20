@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script>
+function showclock()
+{
+    var now=new Date();
+    document.getElementById("p1").innerHTML=now.toString();
+}
+function showtimer()
+{
+    x=setInterval(showclock,1000);
+}
+function stoptimer()
+{
+    clearInterval(x);
+}
+
+</script>
+</head>
+<body>
+    <p id="p1">
+
+    </p>
+<input type="button" value="Click me" 
+onclick="showtimer()" >
+<input type="button" value="stop" onclick="stoptimer()">
+</body>
+</html>

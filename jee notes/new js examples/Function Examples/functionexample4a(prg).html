@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function average( )
+{
+var sum=0;
+for(var i=0;i<arguments.length;i++)
+	sum+=parseInt(arguments[i]);
+var str="sum is "+sum+"<br>";
+str+="avg is "+sum/arguments.length;
+return str;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript" >
+var result;
+result=average(5,20,15,40,12,14,3,8);
+document.write(result);
+</script>
+</body>
+</html>

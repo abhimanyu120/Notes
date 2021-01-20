@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+function chg1()
+{
+x=document.getElementById("div1")
+x.style.backgroundColor="red";
+}
+function chg2()
+{
+x=document.getElementById("div2")
+x.style.backgroundColor="red";
+}
+</script>
+<style type="text/css">
+#div1
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+#div2
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+</style>
+</head>
+<body>
+<div id="div1" onclick="chg1()">
+Click to change color to RED
+</div>
+<div id="div2" onclick="chg2()">
+Click to change color to YELLOW
+</div>
+</body>
+</html>

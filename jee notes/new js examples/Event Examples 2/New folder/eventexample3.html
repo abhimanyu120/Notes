@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Event Demo</title>
+</head>
+<body>
+<div id="mydiv">
+Hello User
+</div>
+<script type="text/javascript">
+var x=document.getElementById("mydiv");
+x.onmouseover=function()
+{
+x.style.color="red";
+x.style.fontWeight="bold";
+}
+x.onmouseout=function()
+{
+x.style.color="black";
+x.style.fontWeight="normal";
+}
+</script>
+</body>
+</html>

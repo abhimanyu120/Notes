@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addPara( )
+{
+var allpara=document.getElementById("d1").getElementsByTagName("p");
+if(allpara.length==3)
+{
+alert("para already added");
+return;
+}
+var newpara=document.createElement("p");
+var newText=document.createTextNode("This is third para");
+
+newpara.appendChild(newText);
+var mydiv=document.getElementById("d1");
+mydiv.appendChild(newpara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1">
+This is first paragraph.
+</p>
+<p id="p2">
+This is second paragraph.
+</p>
+</div>
+<input type="button" value="add new para" onclick="addPara();" >
+</body>
+</html>

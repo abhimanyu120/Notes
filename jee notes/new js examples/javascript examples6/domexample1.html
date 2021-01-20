@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var x=document.getElementById("mypara");
+alert(x.childNodes.length);
+/*x.style.color="red";
+x.style.fontSize="20px";*/
+x.innerHTML="<span style='color:red;font-size: 20px'>This is a sample para</span>";
+
+}
+</script>
+</head>
+<body>
+<p id="mypara">
+This is a sample para
+</p>
+<input type="button" value="Click Me" onclick="show()" ><br>
+</body>
+</html>

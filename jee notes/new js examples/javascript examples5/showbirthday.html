@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var str=prompt("enter your dob(month dd,yyyy)");
+var dob=new Date(str);
+var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+alert("You were born on "+days[dob.getDay()]);
+}
+</script>
+</head>
+<body>
+<input type="button" value="Show My Birth Day" onclick="show();"><br>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function showdata()
+{
+var myform=document.frm;
+var s=myform.lngnames;
+alert("you selected "+s.value);
+}
+</script>
+</head>
+<body>
+<form name="frm">
+Select your favourite language:
+<select name="lngnames" onchange="showdata()">
+<option>C</option>
+<option>C++</option>
+<option>C#</option>
+<option>Java</option>
+<option>Php</option>
+<option>VB.Net</option>
+</select><br>
+</form>
+</body>
+</html>

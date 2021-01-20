@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Event Demo</title>
+</head>
+<body>
+<b>Type Yuor Phone Number</b><input type="text" id="mytext" maxlength="10"><span id="sp1"></span>
+<script type="text/javascript">
+var x=document.getElementById("mytext");
+x.onkeypress=function(e)
+{
+
+if(e.charCode>=48 && e.charCode<=57)
+{
+	var s=document.getElementById("sp1");
+	s.innerHTML="";
+	return true;
+}
+else
+{
+var s=document.getElementById("sp1");
+s.innerHTML="Only Digits are allowed!";
+s.style.color="red";
+return false;
+}
+
+}
+</script>
+</body>
+</html>

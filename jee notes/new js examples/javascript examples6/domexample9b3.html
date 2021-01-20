@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addPara( )
+{
+var mydiv=document.getElementById("d1");
+var paras=mydiv.getElementsByTagName("p");
+var mypara=document.createElement("p");
+var mytext=document.createTextNode("This is a para "+(paras.length+1));
+mypara.appendChild(mytext);
+
+mydiv.appendChild(mypara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1">
+This is para 1.
+</p>
+<p id="p2">
+This is para 2.
+</p>
+</div>
+<input type="button" value="add new para" onclick="addPara();" >
+</body>
+</html>

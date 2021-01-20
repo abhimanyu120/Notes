@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var today=new Date( );
+document.write("The Current Date and Time are "+today+"<br>");
+}
+function showDate( )
+{
+var today=new Date( );
+document.write("The  Date is "+today.getDate( )+"<br>");
+}
+function showWeekDay( )
+{
+var today=new Date( );
+document.write("The day of week is  "+today.getDay()+"<br>");
+}
+</script>
+</head>
+<body>
+<input type="button" value="Show Both" onclick="show();"><br>
+<input type="button" value="Show Date" onclick="showDate();"><br>
+<input type="button" value="Show Week Day" onclick="showWeekDay();"><br>
+</body>
+</html>

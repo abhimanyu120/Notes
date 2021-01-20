@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Event Demo</title>
+</head>
+<body>
+<b>Type Phone Number</b><input type="text" id="mytext">
+<span id="sp1">
+</span>
+<script type="text/javascript">
+var y=document.getElementById("sp1");
+var x=document.getElementById("mytext");
+x.onkeypress=function(e)
+{
+
+y.innerHTML="";
+if(e.charCode>=48 && e.charCode<=57)
+{
+if(this.value.length<10)
+	return true;
+else
+	{
+
+y.innerHTML="Phone number cannot be more than 10 digits";
+y.style.color="red";
+	return false;
+	}
+}
+else
+{
+y.innerHTML="Only digits are allowed";
+y.style.color="red";
+return false;
+}
+}
+x.onkeydown=function(e)
+{
+if(e.keyCode==8)
+	y.innerHTML="";
+
+}
+</script>
+</body>
+</html>

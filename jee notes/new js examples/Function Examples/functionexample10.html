@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+var x=1;
+function printNos(){
+
+    document.write(x+"<br>");
+    x++;
+    if(x==11){
+        clearInterval(y);
+        document.write("Done!!");
+    }
+}
+var y=setInterval(printNos,1000);
+</script>
+</head>
+<body>
+
+</body>
+</html>

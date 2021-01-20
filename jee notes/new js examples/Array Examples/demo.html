@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+let primes=[];
+let n=parseInt(prompt("Enter a no"));
+for(let i=2;i<=n;i++)
+{
+    for(var j=2;j<i;j++){
+            if(i%j==0)
+                    break;
+    }
+    if(i==j)
+        primes[primes.length]=i;            
+}
+if(primes.length==0)
+        document.write("No prime nos found");
+else{
+    document.write(`Prime nos upto ${n} are ${primes}`);
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function show()
+{
+let myform=document.frmlogin;
+let username=myform.txtuser.value;
+let password=myform.txtpwd.value;
+alert(username+","+password);
+}
+</script>
+</head>
+<body>
+<form name="frmlogin">
+Login  Id:<input type="text" name="txtuser" id="userid"><br>
+Password:<input type="password" name="txtpwd" id="userpwd"><br>
+<input type="button" onclick="show()" value="Login">
+</form>
+</body>
+</html>

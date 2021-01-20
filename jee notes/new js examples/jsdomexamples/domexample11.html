@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script >
+    function addLink(){
+        let myanchor=document.createElement("a");
+        let str=prompt("Enter website name:");
+        myanchor.setAttribute("href","http://www."+str);
+        let text=document.createTextNode("Visit "+str);
+        myanchor.appendChild(text);
+        let mypara=document.getElementById("p1");
+        mypara.appendChild(myanchor);
+
+    }
+
+</script>
+</head>
+<body>
+
+<input type="button" value="add link" onclick="addLink();" >
+<p id="p1">
+
+</p>
+</body>
+</html>

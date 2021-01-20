@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+var days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function printClock(){
+    p=document.getElementById("p1");
+    p.style.fontWeight="bold";
+    p.style.fontSize="26px;" 
+    setInterval(startClock,1000);
+}
+function startClock( )
+{
+var now=new Date();
+var day=days[now.getDay()];
+var hours=now.getHours();
+var min=now.getMinutes();
+var sec=now.getSeconds();
+
+p.innerHTML=day+","+hours+":"+min+":"+sec;
+
+}
+</script>
+</head>
+<body>
+<input type="button" value="Start Clock" onclick="printClock();" >
+<p id="p1">
+
+</p>
+</body>
+</html>

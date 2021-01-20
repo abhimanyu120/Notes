@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Form  Demo</title>
+<script>
+function validate()
+{
+var user=document.login.txtuser.value;
+var pwd=document.login.txtpwd.value;
+if(user===""|| pwd==="")
+	{
+	alert("Username or Password cannot be left blank");
+	return false;
+	}
+return true;
+}
+
+</script>
+</head>
+<body>
+<form name="login" action="login.jsp" onsubmit="return(validate())">
+<table>
+<tr><td>Login  Id:</td><td><input type="text" name="txtuser" id="userid"></td></tr>
+<tr><td>Password:</td><td><input type="password" name="txtpwd" id="userpwd"></td></tr>
+<tr><td><input type="submit"  value="Login"></td></tr>
+</table>
+</form>
+</body>
+</html>

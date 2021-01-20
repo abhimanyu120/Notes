@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function changeCss( )
+{
+var ul=document.getElementById("nav");
+var a=ul.getElementsByTagName("a");
+for(i=0;i<a.length;i++)
+	a[i].style.color="green";
+}
+</script>
+</head>
+<body>
+<ul id="nav">
+<li><a href="#">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Clients</a></li>
+</ul>
+<input type="button" value="click me" onclick="changeCss();" >
+</body>
+</html>

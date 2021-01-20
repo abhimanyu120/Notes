@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+var names=["amit","vijay","karan","vijay","ramesh","karan","amit"];
+var searchName=prompt("Enter name to search");
+var startIndex=0;
+while(true){
+    var pos=names.indexOf(searchName,startIndex);
+    if(pos===-1)
+    {
+            if(startIndex===0)
+                document.write(searchName+ " not in the list");
+            break;
+    }
+    document.write("<br>"+searchName+" is at pos "+(pos+1));
+    startIndex=pos+1;
+    }
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

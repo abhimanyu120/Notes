@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function process(elem)
+{
+alert(elem.value);
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<table>
+<tr><td>Login  Id:</td><td><input type="text" name="txtuser" id="userid" 
+onblur="process(this)"></td></tr>
+<tr><td>Password:</td><td><input type="password" name="txtpwd" id="userpwd"></td></tr>
+</form>
+</body>
+</html>

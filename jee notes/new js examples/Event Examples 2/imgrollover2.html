@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Event Handling Demo</title>
+<style type="text/css">
+.img1
+{
+position:  absolute;
+top: 10px;
+left: 10px;
+}
+.img2
+{
+position:  absolute;
+top: 200px;
+left: 400px;
+}
+</style>
+</head>
+<body>
+<img id="mypic"  src="joe_open.jpg" >
+<script type="text/javascript">
+var x=document.getElementById("mypic");
+var count=1;
+x.onmouseover=function()
+{
+if(count%2==1)
+{
+this.setAttribute("src","joe_blink.jpg");
+this.setAttribute("class","img2");
+}
+else
+{
+this.setAttribute("src","joe_open.jpg");
+this.setAttribute("class","img1");
+}
+count++;
+}
+</script>
+</body>
+</html>

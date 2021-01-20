@@ -1,0 +1,35 @@
+<html>
+<head>
+<style type="text/css">
+.abc
+{
+text-decoration: none;
+color: yellow;
+font-weight: bold;
+font-style:italic;
+font-size: 20px;
+}
+
+</style>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addLink( )
+{
+var str=prompt("Enter the url");
+var anch=document.createElement("a");
+var mytext=document.createTextNode("Click Me ");
+anch.appendChild(mytext);
+anch.setAttribute("href",str);
+anch.setAttribute("class","abc");
+var mydiv=document.getElementById("d1");
+mydiv.appendChild(anch);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+
+</div>
+<input type="button" value="add new link" onclick="addLink();" >
+</body>
+</html>

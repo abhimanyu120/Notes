@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show1( )
+{
+var x=document.getElementsByTagName("p");
+var y=x[0].innerHTML;
+alert(y);
+}
+function show2( )
+{
+var x=document.getElementsByTagName("p");
+var y=x[1].innerHTML;
+alert(y);
+
+}
+</script>
+</head>
+<body>
+<p >
+This is a sample paragraph.
+</p>
+<p >
+This is a second sample paragraph.
+</p>
+<input type="button" value="show para 1" onclick="show1();" >
+<input type="button" value="show para 2" onclick="show2();" >
+</body>
+</html>

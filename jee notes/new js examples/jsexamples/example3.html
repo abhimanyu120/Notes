@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example 3</title>
+    <script>
+    var a=prompt("Enter an int:");
+    if(a!=null)
+    {
+    if (isNaN(a))
+        document.write("you did not input a number");
+    else
+    {
+        var b=parseInt(a);
+       if(b<0)
+            document.write("you input a neg number");
+       else if(b==0)
+            document.write("you input 0");
+       else if(b<=9)
+            document.write("you input single digit number"); 
+       else if(b<=99)
+            document.write("you input double digit number"); 
+       else
+        document.write("you input a number with 3 or more digits");
+    }
+    }
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

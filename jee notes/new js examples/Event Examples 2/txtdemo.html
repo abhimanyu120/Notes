@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Event Handling Demo</title>
+</head>
+<body>
+<b>Type Your Name</b>
+<input type="text" id="mytxt" >
+<input type="button" value="click me" id="btn">
+<script type="text/javascript">
+var x=document.getElementById("btn");
+x.onclick=function(e)
+{
+var txt=document.getElementById("mytxt");
+var str=txt.value;
+if(str=="")
+	alert("Please type your name");
+else
+	alert("hello "+str);	
+
+}
+</script>
+</body>
+</html>

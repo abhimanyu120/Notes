@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+function changeColor()
+{
+    switch(this.getAttribute("id"))
+    {
+        case "div1":
+                this.style.backgroundColor="red";
+                break;
+        case "div2":
+                this.style.backgroundColor="yellow";
+                break;
+    }
+    
+}
+</script>
+<style type="text/css">
+#div1
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+#div2
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+</style>
+</head>
+<body>
+<div id="div1">
+Click to change color to RED
+</div>
+<div id="div2">
+Click to change color to YELLOW
+</div>
+<script>
+var x=document.getElementById("div1");
+x.onclick=changeColor;
+x=document.getElementById("div2");
+x.onclick=changeColor;
+</script>
+
+
+</body>
+</html>

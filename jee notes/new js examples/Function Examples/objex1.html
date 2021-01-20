@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student={
+            name:'Ashish',
+            phy:40,
+            chem:50,
+            maths:60
+        
+        };
+        var total=0;
+        for(var x in student)
+        {
+            if(typeof student[x]==='number')
+                    total=total+student[x];   
+        }
+        console.log("Total marks:"+total);        
+        //console.log("Name of myCar's stereo is "+myCar.stereo.name);
+    </script>
+</body>
+</html>

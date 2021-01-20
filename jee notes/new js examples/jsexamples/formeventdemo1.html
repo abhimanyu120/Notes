@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function validate()
+{
+var user=document.frm.txtuser;
+var pwd=document.frm.txtpwd;
+if(user.value=="" || pwd.value=="")
+	{
+	alert("User id and password are compulsory");
+	return false;
+	}
+else
+	{
+	alert("Validation successful");
+	return true;
+	}
+}
+</script>
+</head>
+<body>
+<form name="frm" action="login.jsp" onsubmit="return(validate())">
+Login  Id:<input type="text" name="txtuser" id="userid"><br>
+Password:<input type="password" name="txtpwd" id="userpwd"><br>
+<input type="submit"  value="Login" >
+</form>
+</body>
+</html>

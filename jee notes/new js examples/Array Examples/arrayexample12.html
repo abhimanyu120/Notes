@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+var names=[ ];
+var i;
+for( i=0;i<5;i++)
+{
+names[i]=prompt("Enter name");
+}
+document.write("Names are:<br>");
+for(i=0;i<5;i++)
+{
+document.write(names[i]+"<br>");
+}
+var newarray=[];
+i=0;
+while(names.length>0)
+{
+    var randomIndex=parseInt(Math.random()*names.length);
+    var x=names[randomIndex];
+    newarray[i++]=x;
+    names.splice(randomIndex,1);
+}
+document.write("Shuffled names are:<br>");
+for(i=0;i<5;i++)
+{
+document.write(newarray[i]+"<br>");
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

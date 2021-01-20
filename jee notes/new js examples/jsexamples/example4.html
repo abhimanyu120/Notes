@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example 4</title>
+    <script>
+    var sub1=parseInt(prompt("Enter marks in subject 1:"));
+    var sub2=parseInt(prompt("Enter marks in subject 2:"));
+    var sub3=parseInt(prompt("Enter marks in subject 3:"));
+    var sub4=parseInt(prompt("Enter marks in subject 4:"));
+    var sub5=parseInt(prompt("Enter marks in subject 5:"));
+    var avg=(sub1+sub2+sub3+sub4+sub5)/5;
+    var pass1=sub1>=60?1:0;
+    var pass2=sub2>=60?1:0;
+    var pass3=sub3>=60?1:0;
+    var pass4=sub4>=60?1:0;
+    var pass5=sub5>=60?1:0;
+    var totalpass=pass1+pass2+pass3+pass4+pass5;
+    document.write("Your marks:<br>");
+    document.write("sub 1:"+sub1+"<br>");
+    document.write("sub 2:"+sub2+"<br>");
+    document.write("sub 3:"+sub3+"<br>");
+    document.write("sub 4:"+sub4+"<br>");
+    document.write("sub 5:"+sub5+"<br>");
+    document.write("You passed :"+totalpass+" subjects<br>");
+    document.write("Your avg score is:"+avg+"<br>");
+    var result=(totalpass>=4 && avg>=60)?"Congratulations!!! You are promoted to the next class":" Sorry! Better luck next time";
+    document.write(result);     
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function average()
+{
+var sum=0;
+for(var i=0;i<arguments.length;i++)
+{
+sum=sum+arguments[i];
+document.write(arguments[i]+"<br>");
+}
+document.write("Sum is "+sum);
+document.write("<br>Avg is "+(sum/arguments.length)+"<br>");
+}
+</script>
+</head>
+<body>
+<a href="JavaScript:average(10,20,30)">Call average</a>
+</body>
+</html>

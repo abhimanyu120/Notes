@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var a=document.getElementById("nav2");
+var x=a.getElementsByTagName("li");
+alert(x[4].innerHTML);
+}
+</script>
+</head>
+<body>
+<ul id="nav1">
+<li>Company Profile</li>
+<li>Investors</li>
+<li>Share Market</li>
+<li>Stock Price</li>
+<li>Portfolio</li>
+</ul>
+<ul id="nav2">
+<li>Home</li>
+<li>Products</li>
+<li>Services</li>
+<li>Contact</li>
+<li>About Us</li>
+</ul>
+<input type="button" value="click me" onclick="show();" >
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Date Example</title>
+<script>
+function showdate()
+{
+var weekDays=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
+var dt=new Date("August 15,1947");
+var day=dt.getDay();
+var dayName=weekDays[day];
+document.write("We got independence on<b> "+dayName+"</b>");
+
+}
+</script>
+</head>
+<body>
+<input type="button" value="show date details" 
+	onclick="showdate()" >
+</body>
+</html>
+
+
+
+

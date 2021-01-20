@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Event Handling Demo</title>
+</head>
+<body>
+<b>Type + or -:</b>
+<input type="text" id="mytxt" >
+<p id="p1">
+This is a sample text
+</p>
+<script type="text/javascript">
+var x=document.getElementById("mytxt");
+var currsize=16;
+x.onkeypress=function(e)
+{
+var data=String.fromCharCode(e.charCode);
+var mypara=document.getElementById("p1");
+if(data=="+")
+     {
+	
+	currsize+=5;
+	mypara.style.fontSize=currsize+"px";
+	
+	
+      }
+else if(data=="-")
+   {
+	currsize-=5;
+	mypara.style.fontSize=currsize+"px";
+      }		
+	
+
+}
+</script>
+</body>
+</html>

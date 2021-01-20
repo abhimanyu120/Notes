@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function decorate( )
+{
+let myuls=document.getElementsByClassName("highlight");
+for(let i=0;i<myuls.length;i++)
+    myuls[i].style.border="red solid 1px";
+}
+</script>
+</head>
+<body>
+<ul id="nav1" class="highlight">
+<li>Home</li>
+<li>Products</li>
+<li>Services</li>
+<li>Contact</li>
+<li>About Us</li>
+</ul>
+<ul id="nav2" class="highlight">
+<li>Books</li>
+<li>Mobiles</li>
+<li>Laptops</li>
+</ul>
+<ul id="nav3" class="highlight">
+<li>Accesories</li>
+<li>Clothes</li>
+<li>Pens</li>
+<li>Diaries</li>
+</ul>
+
+<input type="button" value="Add Border" onclick="decorate();" >
+</body>
+</html>

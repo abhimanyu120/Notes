@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+function disp( )
+{
+var myfrm=document.getElementById("f1");
+alert("Login Id is "+myfrm.txtuser.value);
+alert("Password is "+myfrm.txtpwd.value);
+}
+</script>
+</head>
+<body>
+<form  id="f1">
+Login  Id:<input  type="text" name="txtuser" id="userid"><br>
+Password:<input  type="password" name="txtpwd" id="userpwd"><br>
+<input type="button"  value="Click Me" onclick="disp()">
+</form>
+</body>
+</html>

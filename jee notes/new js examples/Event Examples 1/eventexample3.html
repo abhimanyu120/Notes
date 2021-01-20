@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+var n=10;
+function changecolor1(){
+    let mydiv=document.getElementById("div1");
+    mydiv.style.backgroundColor="red";
+  
+}
+function changecolor2(){
+    let mydiv=document.getElementById("div2");
+    mydiv.style.backgroundColor="yellow";
+}
+</script>
+<style type="text/css">
+#div1
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+#div2
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+</style>
+</head>
+<body>
+<div id="div1" onclick="changecolor1()">
+Click to change color to RED
+</div>
+<div id="div2" onclick="changecolor2()">
+Click to change color to YELLOW
+</div>
+</body>
+</html>

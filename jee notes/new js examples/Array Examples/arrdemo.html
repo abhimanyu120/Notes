@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Switch Demo</title>
+<script type="text/javascript" >
+var arr=[];
+var i;
+for(i=0;i<5;i++)
+{
+arr[i]=parseInt(prompt("Enter a number"));
+}
+var n;
+document.write("Array values are<br>");
+for(i=0;i<arr.length;i++)
+{
+document.write(arr[i]+"<br>");
+}
+n=parseInt(prompt("Enter no to delete"));
+for(i=0;i<arr.length;i++)
+{
+if(arr[i]==n)
+	delete arr[i];
+}
+document.write("New Array values are<br>");
+for(i=0;i<arr.length;i++)
+{
+document.write(arr[i]+"<br>");
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function showBorder( )
+{
+var x=document.getElementsByClassName("highlight");
+for(var i=0;i<x.length;i++)
+	x[i].style.border="solid red 2px";
+}
+</script>
+</head>
+<body>
+<ul id="nav1" class="highlight">
+<li>Home</li>
+<li>Products</li>
+<li>Services</li>
+<li>Contact</li>
+<li>About Us</li>
+</ul>
+<ul id="nav2" class="highlight">
+<li>Books</li>
+<li>Mobiles</li>
+<li>Laptops</li>
+</ul>
+<ul id="nav3" class="highlight">
+<li>Accesories</li>
+<li>Clothes</li>
+<li>Pens</li>
+<li>Diaries</li>
+</ul>
+
+<input type="button" value="Add Border" onclick="showBorder();" >
+</body>
+</html>

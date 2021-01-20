@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function change(elem)
+{
+elem.style.backgroundColor="yellow";
+}
+function change2(elem)
+{
+elem.style.backgroundColor="white";
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<table>
+<tr><td>Login  Id:</td><td><input type="text" name="txtuser" id="userid" onfocus="change(this)" onblur=" change2(this)"></td></tr>
+<tr><td>Password:</td><td><input type="password" name="txtpwd" id="userpwd"  onfocus="change(this)" onblur=" change2(this)"></td></tr>
+</form>
+</body>
+</html>

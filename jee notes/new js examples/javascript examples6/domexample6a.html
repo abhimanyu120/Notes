@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var ul=document.getElementById("nav");
+var anclist=ul.getElementsByTagName("a");
+alert(anclist[2].firstChild.nodeValue);
+anclist[2].firstChild.nodeValue="Our Favourites";
+
+}
+</script>
+</head>
+<body>
+<ul id="nav">
+<li><a href="#">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">About Us</a></li>
+</ul>
+<input type="button" value="click me" onclick="show();" >
+</body>
+</html>

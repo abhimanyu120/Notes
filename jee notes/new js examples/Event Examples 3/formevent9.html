@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function validate()
+{
+var myform=document.frm;
+var inpuser=myform.txtuser;
+var inpwd=myform.txtpwd;
+var sp1=document.getElementById("sp1");
+var sp2=document.getElementById("sp2");
+sp1.innerHTML="";
+sp2.innerHTML="";
+var status=true;
+if(inpuser.value=="")
+	{
+	sp1.innerHTML="Username required";
+	sp1.style.color="red";
+	status=false;
+	}
+else if(inpuser.value.length<5)
+	{
+	sp1.innerHTML="Username must be atleast 5 characters";
+	sp1.style.color="red";
+	status=false;
+	}
+else if(inpwd.value=="")
+	{
+	sp2.innerHTML="Password required";
+	sp2.style.color="red";
+	status=false;
+	}
+else if(inpwd.value.length<5)
+	{
+	sp2.innerHTML="Password must be atleast 5 characters";
+	sp2.style.color="red";
+	status=false;
+	}
+return status;
+}
+</script>
+</head>
+<body>
+<form name="frm" onsubmit="return (validate())" action="login.php" method="post">
+<table>
+<tr><td>Login  Id:</td><td><input type="text" name="txtuser" id="userid" ><span id="sp1"></span></td></tr>
+<tr><td>Password:</td><td><input type="password" name="txtpwd" id="userpwd"  ><span id="sp2"></span></td></tr>
+<tr><td><input type="submit" value="Login" >
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Event Handling Demo</title>
+</head>
+<body>
+<b>Type your phone nm:</b>
+<input type="text" id="txtphone" >
+<script type="text/javascript">
+var x=document.getElementById("txtphone");
+x.onkeypress=function(e)
+{
+var data=e.charCode;
+if(data==8)
+	return true;
+if(x.value.length==10)
+	return false;
+if(!(data>=48 && data<=57))
+	{
+	alert("not a digit");
+	return false;
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addPara( )
+{
+var newpara=document.createElement("p");
+var currdate=new Date();
+var datestr=currdate.toDateString();
+var newText=document.createTextNode(datestr);
+newpara.appendChild(newText);
+var mydiv=document.getElementById("d1");
+newpara.style.fontWeight="bold"
+newpara.style.fontStyle="italic"
+newpara.style.color="blue"
+newpara.style.fontSize="120%"
+mydiv.appendChild(newpara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1">
+This is first paragraph.
+</p>
+<p id="p2">
+This is second paragraph.
+</p>
+</div>
+<input type="button" value="add new para" onclick="addPara();" >
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<style type="text/css">
+#datep
+{
+border: dotted red 3px;
+display: inline;
+font-weight: bold;
+font-size: 20px;
+}
+</style>
+<script type="text/javascript" >
+function addPara( )
+{
+var newpara=document.createElement("p");
+var newText=document.createTextNode(new Date().toDateString());
+
+newpara.appendChild(newText);
+var mydiv=document.getElementById("d1");
+var oldpara=document.getElementById("p2");
+newpara.setAttribute("id","datep");
+mydiv.insertBefore(newpara,oldpara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1">
+This is first paragraph.
+</p>
+<p id="p2">
+This is second paragraph.
+</p>
+</div>
+<input type="button" value="add new para" onclick="addPara();" >
+</body>
+</html>

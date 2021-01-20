@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addPara( )
+{
+var newpara=document.createElement("p");
+var newText=document.createTextNode("This para is added in between");
+newpara.appendChild(newText);
+newpara.style.backgroundColor="yellow";
+newpara.setAttribute("align","center");
+var mydiv=document.getElementById("d1");
+var fpara=document.getElementById("p2");
+mydiv.insertBefore(newpara,fpara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1">
+This is first paragraph.
+</p>
+<p id="p2">
+This is second paragraph.
+</p>
+</div>
+<input type="button" value="add new para" onclick="addPara();" >
+</body>
+</html>

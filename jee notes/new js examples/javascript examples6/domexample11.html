@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function removePara( )
+{
+var mydiv=document.getElementById("d1");
+var mypara=document.getElementById("p1");
+mydiv.removeChild(mypara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1">
+This is first paragraph.
+</p>
+<p id="p2">
+This is second paragraph.
+</p>
+</div>
+<input type="button" value="remove para" onclick="removePara();" >
+</body>
+</html>

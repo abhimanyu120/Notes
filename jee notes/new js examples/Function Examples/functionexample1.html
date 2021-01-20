@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+ var x=10;
+function f1(){
+    var x=20;
+    alert("in f1 x is "+x);
+    alert("in f1 x is "+window.x);
+}
+function f2(){
+    //var x=3;
+    alert("in f2 x is "+x);
+}
+
+</script>
+</head>
+<body>
+<input type="button" value="click me" onclick="f1()">
+   
+</body>
+</html>

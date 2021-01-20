@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function addList( )
+{
+var languages=["C","C++","Java","PHP","JavaScript",".Net"];
+var mylist=document.createElement("ul");
+for(i=0;i<languages.length;i++)
+{
+	
+	var myli=document.createElement("li");
+	var mytext=document.createTextNode(languages[i]);
+	myli.appendChild(mytext);
+	mylist.appendChild(myli);
+
+}
+document.getElementById("d1").appendChild(mylist);
+}
+</script>
+</head>
+<body>
+<input type="button" value="show languages" onclick="addList();" >
+<div id="d1" >
+
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+function check(x)
+{
+var ans=prompt("Enter site name ?");
+switch(ans)
+{
+case "google":
+	   x.setAttribute("href","http://www.google.com");
+	   return true;
+
+case "facebook":
+	   x.setAttribute("href","http://www.facebook.com");
+	   return true;
+}
+return false;
+}
+</script>
+</head>
+<body>
+<a href="#" onclick="return(check(this))" >Click Me</a>
+</body>
+</html>
+
+
+

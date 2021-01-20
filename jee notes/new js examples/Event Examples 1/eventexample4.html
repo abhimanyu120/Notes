@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+function changeColor(x)
+{
+    if(x.getAttribute("id")==="div1")
+            x.style.backgroundColor="red";
+    else
+            x.style.backgroundColor="yellow";
+}
+</script>
+<style type="text/css">
+#div1
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+#div2
+{
+width: 300px;
+height: 200px;
+border: solid 1px black;
+}
+</style>
+</head>
+<body>
+<div id="div1" onclick="changeColor(this)">
+Click to change color
+</div>
+<div id="div2" onclick="changeColor(this)">
+Click to change color
+</div>
+</body>
+</html>

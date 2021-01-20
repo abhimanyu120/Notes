@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var myspan;
+myspan=document.getElementById("sp1");
+var str=myspan.firstChild.nodeValue;
+alert(str);
+}
+function change( )
+{
+var myspan;
+myspan=document.getElementById("sp1");
+myspan.firstChild.nodeValue="Now text has changed";
+
+}
+</script>
+</head>
+<body>
+<p id="p1">
+This is a sample paragraph.
+</p>
+<span id="sp1">
+This is a span element.
+</span>
+<br>
+<input type="button" value="show text" onclick="show();" >
+<input type="button" value="change it" onclick="change();" >
+</body>
+</html>

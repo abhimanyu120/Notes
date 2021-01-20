@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function validate()
+{
+var myform=document.frm;
+var login=myform.txtuser;
+var pwd=myform.txtpwd;
+var message;
+if(login.value=="")
+	{
+	message="User name cannot be empty";
+	alert(message);
+	return false;
+	}
+else if(pwd.value=="")
+	{
+	message="pwd cannot be empty";
+	alert(message);
+	return false;
+	}
+}
+</script>
+</head>
+<body>
+<form name="frm" action="login.php" onsubmit="return(validate())" method="post">
+<table>
+<tr><td>Login  Id:</td><td><input type="text" name="txtuser" id="userid" ></td></tr>
+<tr><td>Password:</td><td><input type="password" name="txtpwd" id="userpwd" ></td></tr>
+<tr><td><input type="submit" value="Login" >
+</form>
+</body>
+</html>

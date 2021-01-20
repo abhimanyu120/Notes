@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function decorate( )
+{
+var x=document.getElementById("p1");
+x.style.color="red";
+x.style.fontWeight="bold";
+x.style.border="2px dashed green";
+}
+</script>
+</head>
+<body>
+<p id="p1">
+This is a para which will be decorated when button is clicked.
+</p>
+
+<input type="button" value="click me" onclick="decorate();" >
+</body>
+</html>

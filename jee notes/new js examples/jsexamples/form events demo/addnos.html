@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Number Addition</title>
+<script type="text/javascript">
+function addnos()
+{
+var num1=document.myfrm.fno.value;
+var num2=document.myfrm.sno.value;
+var res=document.getElementById("result");
+res.innerHTML="Sum is "+(parseInt(num1)+parseInt(num2));
+res.style.fontWeight="bold";
+res.style.color="red";
+}
+function validate(e)
+{
+if(! (e.charCode>=48 && e.charCode<=57))
+	{
+		alert("Only digits allowed");
+		return false;
+	}
+else
+	return true;
+
+}
+</script>
+</head>
+<body>
+<form name="myfrm">
+Enter first number:<input type="text" id="t1" name="fno" ><br>
+Enter secnd number:<input type="text" id="t2" name="sno" ><br>
+<input type="button" value="Add Nos" onclick="addnos()"><br>
+</form>
+<div id="result">
+</div>
+<script type="text/javascript">
+var x=document.getElementById("t1");
+x.onkeypress=validate;
+var y=document.getElementById("t2");
+y.onkeypress=validate;
+</script>
+</body>
+</html>

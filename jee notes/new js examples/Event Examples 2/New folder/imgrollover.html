@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Event Handling Demo</title>
+</head>
+<body>
+<img id="mypic"  src="joe_open.jpg" >
+<script type="text/javascript">
+var x=document.getElementById("mypic");
+x.onmouseover=function()
+{
+this.setAttribute("src","joe_blink.jpg");
+}
+x.onmouseout=function()
+{
+this.setAttribute("src","joe_open.jpg");
+}
+</script>
+</body>
+</html>

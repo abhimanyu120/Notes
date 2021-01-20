@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>An Example XHTML Document</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript">
+		function show()
+		{
+			var x=document.getElementsByTagName("a")[0].childNodes;
+			alert(x.length);
+
+		}
+		</script>
+		
+	</head>
+	<body>
+		<p>This is an example paragraph.</p>
+		<p>This is an example paragraph with 
+			<a href="stuff.html">a hyperlink</a> inside of it!</p>
+		<p>And here's one with<br />a line break 
+			and an <img src="image.jpg" alt="image">.</p>
+		<input type="button" value="click me" onclick="show();" >
+	</body>
+</html>
+

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+var a=10;
+function f1( )
+{
+var a=20;
+alert("in f1  a is "+a);
+alert("in f1  a is "+window.a);
+}
+function f2( )
+{
+alert("in f2 a is "+a);
+}
+</script>
+</head>
+<body>
+<div style="text-align: center;font-size: 120%;font-weight: bold">
+To call the f1 <input type="button" value="call f1" 
+onclick="f1()" ><br>
+To call the f2 <input type="button" value="call f2" 
+onclick="f2()" >
+</div>
+</body>
+</html>

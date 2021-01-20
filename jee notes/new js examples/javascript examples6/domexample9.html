@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<style type="text/css">
+.sachin
+{
+font-weight: bold;
+font-style: italic;
+color: blue;
+font-size: 120%;
+}
+</style>
+<script type="text/javascript" >
+function addPara( )
+{
+var dv=document.getElementById("d1");
+var oldparas=dv.getElementsByTagName("p");
+var mypara=document.createElement("p");
+mypara.setAttribute("class","sachin");
+var mytxt=document.createTextNode("I am para "+(oldparas.length+1));
+mypara.appendChild(mytxt);
+dv.appendChild(mypara);
+
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1">
+I am para 1
+</p>
+<p id="p2">
+I am para 2.
+</p>
+</div>
+<input type="button" value="add new para" onclick="addPara();" >
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Form Event Demo</title>
+<script type="text/javascript">
+function validate()
+{
+var myform=document.frm;
+var inpuser=myform.txtuser;
+var inpwd=myform.txtpwd;
+var inphno=myform.txtphone;
+var inctry=myform.optctry;
+var sp1=document.getElementById("sp1");
+var sp2=document.getElementById("sp2");
+var sp3=document.getElementById("sp3");
+var sp4=document.getElementById("sp4");
+sp1.style.visibility="hidden";
+sp2.style.visibility="hidden";
+sp3.style.visibility="hidden";
+sp4.style.visibility="hidden";
+var status=true;
+if(inpuser.value=="")
+	{
+	sp1.innerHTML="Username required!";
+	sp1.style.color="red";
+	sp1.style.visibility="visible";
+	status=false;
+	}
+else if(inpuser.value.length<5)
+	{
+	sp1.innerHTML="Username must be atleast 5 characters!";
+	sp1.style.color="red";
+	sp1.style.visibility="visible";
+	status=false;
+	}
+else if(inpwd.value=="")
+	{
+	sp2.innerHTML="Password required!";
+	sp2.style.color="red";
+	sp2.style.visibility="visible";
+	status=false;
+	}
+else if(inpwd.value.length<5)
+	{
+	sp2.innerHTML="Password must be atleast 5 characters!";
+	sp2.style.color="red";
+	sp2.style.visibility="visible";
+	status=false;
+	}
+else if(inphno.value=="")
+	{
+	sp3.innerHTML="Phone number reqd!";
+	sp3.style.color="red";
+	sp3.style.visibility="visible";
+	status=false;
+	}
+else if(isNaN(inphno.value))
+	{
+	sp3.innerHTML="Only digits allowed!";
+	sp3.style.color="red";
+	sp3.style.visibility="visible";
+	status=false;
+	}
+else if(inphno.value.length!=10)
+	{
+	sp3.innerHTML="Phone number must be of 10 digits!";
+	sp3.style.color="red";
+	sp3.style.visibility="visible";
+	status=false;
+	}
+else if(inctry.value=="Choose Yours")
+	{
+	sp4.innerHTML="Country reqd!";
+	sp4.style.color="red";
+	sp4.style.visibility="visible";
+	status=false;
+	}
+return status;
+}
+</script>
+<style type="text/css">
+h3#title
+{
+	text-align: center;
+	text-decoration: underline;
+}
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	border: ridge 5px black;
+	background-color: darkcyan;
+	width: 700px;
+	height: 300px;
+	font-size: 150%;
+}
+span
+{
+	font-size:90%;
+}
+
+
+td
+{
+	font-size:120%;
+	font-weight:bold;
+}
+body
+{
+	background-color: bisque;
+}
+#btn
+{
+	font-size: 120%;
+	font-weight: bold;
+}	
+</style>
+</head>
+<body>
+<div id="container">
+<form name="frm" onsubmit="return (validate())" action="login.php">
+<h3 id="title">User Registration</h3>
+<table >
+<tr><td>Username:</td><td><input type="text" name="txtuser" id="userid" ><span id="sp1"></span></td></tr>
+<tr><td>Password:</td><td><input type="password" name="txtpwd" id="userpwd"  ><span id="sp2"></span></td></tr>
+<tr><td>Phone Number:</td><td><input type="text" name="txtphone" id="userph" ><span id="sp3"></span></td></tr>
+<tr><td>Country:</td><td><select name="optctry">
+		      <option >Choose Yours</option> 
+		      <option >India</option>
+		      <option >USA</option>
+		      <option>UK</option>
+		      </select><span id="sp4"></span></td></tr>
+<tr><td><input type="submit" value="Register Me" id="btn">
+</form>
+</div>
+</body>
+</html>

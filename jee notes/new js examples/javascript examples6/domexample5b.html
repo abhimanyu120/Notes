@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Java Script Demo</title>
+<script type="text/javascript" >
+function show( )
+{
+var x;
+x=document.getElementById("nav1");
+var y=x.getElementsByTagName("li");
+y[2].style.backgroundColor="yellow";
+y[2].style.fontWeight="bold";
+}
+</script>
+</head>
+<body>
+<ul id="nav1" class="highlight">
+<li>Visit <a href="#">Home</a></li>
+<li>Visit <a href="#">Products</a></li>
+<li>Visit <a href="#">Services</a></li>
+<li>Visit <a href="#">Contact</a></li>
+<li>Visit <a href="#">About Us</a></li>
+</ul>
+<ul id="nav2" class="highlight">
+<li>Visit <a href="#">Books</a></li>
+<li>Visit <a href="#">Mobiles</a></li>
+<li>Visit <a href="#">Laptops</a></li>
+</ul>
+<ul id="nav3" class="highlight">
+<li>Visit <a href="#">Accesories</a></li>
+<li>Visit <a href="#">Clothes</a></li>
+<li>Visit <a href="#">Pens</a></li>
+<li>Visit <a href="#">Diaries</a></li>
+</ul>
+
+<input type="button" value="click me" onclick="show();" >
+</body>
+</html>

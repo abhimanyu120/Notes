@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script type="text/javascript">
+function changeBold( )
+{
+this.style.fontWeight="bold";
+}
+function changeNormal()
+{
+this.style.fontWeight="normal";
+}
+</script>
+</head>
+<body>
+<div id="mydiv">
+Hello User
+</div>
+<script type="text/javascript">
+var x=document.getElementById("mydiv");
+x.onmouseover=changeBold;
+x.onmouseout=changeNormal;
+</script>
+</body>
+</html>
